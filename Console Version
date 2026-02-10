@@ -1,0 +1,72 @@
+a1 = ' '
+a2 = ' '
+a3 = ' '
+b1 = ' '
+b2 = ' '
+b3 = ' '
+c1 = ' '
+c2 = ' '
+c3 = ' '
+
+print("===TicTacToe===")
+
+player = 'X'
+
+while True:
+ 
+ if player == 'X': #intentional #can skip turn
+  player = 'O'
+ else:
+  player = 'X'
+
+ print(
+       f'a |{a1}|{a2}|{a3}|\n'\
+       f'b |{b1}|{b2}|{b3}|\n'\
+       f'c |{c1}|{c2}|{c3}|\n'\
+ )  
+
+ move = input(f'Player {player}, move(example: a1): ').strip().lower()
+ print()
+
+ if move == 'a1' and a1 == ' ':
+        a1 = player
+ elif move == 'a2' and a2 == ' ':
+        a2 = player  
+ elif move == 'a3' and a3 == ' ':
+        a3 = player
+ elif move == 'b1' and b1 == ' ':
+        b1 = player
+ elif move == 'b2' and b2 == ' ':
+        b2 = player
+ elif move == 'b3' and b3 == ' ':
+        b3 = player
+ elif move == 'c1' and c1 == ' ':
+        c1 = player
+ elif move == 'c2' and c2 == ' ':
+        c2 = player
+ elif move == 'c3' and c3 == ' ':
+        c3 = player
+ else:
+       print("Invalid or occupied position!")
+ 
+ if (
+        (a1 == a2 == a3 != ' ') or
+        (b1 == b2 == b3 != ' ') or
+        (c1 == c2 == c3 != ' ') or
+        (a1 == b1 == c1 != ' ') or
+        (a2 == b2 == c2 != ' ') or
+        (a3 == b3 == c3 != ' ') or
+        (a1 == b2 == c3 != ' ') or
+        (a3 == b2 == c1 != ' ')
+ ):
+  print(f'Player {player} wins!') 
+  break
+ 
+ elif (
+      (a1 != ' ' and a2 != ' ' and a3 != ' ') and
+      (b1 != ' ' and b2 != ' ' and b3 != ' ') and
+      (c1 != ' ' and c2 != ' ' and c3 != ' ') 
+
+ ):
+  print("It's a draw!")
+  break
