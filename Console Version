@@ -50,14 +50,14 @@ while True:
        print("Invalid or occupied position!")
  
  if (
-        (a1 == a2 == a3 != ' ') or
-        (b1 == b2 == b3 != ' ') or
-        (c1 == c2 == c3 != ' ') or
-        (a1 == b1 == c1 != ' ') or
-        (a2 == b2 == c2 != ' ') or
-        (a3 == b3 == c3 != ' ') or
-        (a1 == b2 == c3 != ' ') or
-        (a3 == b2 == c1 != ' ')
+    (a1 == a2 == a3 != ' ') or
+    (b1 == b2 == b3 != ' ') or
+    (c1 == c2 == c3 != ' ') or
+    (a1 == b1 == c1 != ' ') or
+    (a2 == b2 == c2 != ' ') or
+    (a3 == b3 == c3 != ' ') or
+    (a1 == b2 == c3 != ' ') or
+    (a3 == b2 == c1 != ' ')
  ):
   print(f'Player {player} wins!') 
   break
