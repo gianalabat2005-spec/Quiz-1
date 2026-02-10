@@ -66,7 +66,6 @@ while True:
       (a1 != ' ' and a2 != ' ' and a3 != ' ') and
       (b1 != ' ' and b2 != ' ' and b3 != ' ') and
       (c1 != ' ' and c2 != ' ' and c3 != ' ') 
-
  ):
   print("It's a draw!")
   break
