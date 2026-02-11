@@ -1,3 +1,5 @@
+print("===TicTacToe===")
+
 a1 = ' '
 a2 = ' '
 a3 = ' '
@@ -8,17 +10,10 @@ c1 = ' '
 c2 = ' '
 c3 = ' '
 
-print("===TicTacToe===")
-
 player = 'X'
 
 while True:
  
- if player == 'X': #intentional #can skip turn
-  player = 'O'
- else:
-  player = 'X'
-
  print(
        f'a |{a1}|{a2}|{a3}|\n'\
        f'b |{b1}|{b2}|{b3}|\n'\
@@ -69,3 +64,8 @@ while True:
  ):
   print("It's a draw!")
   break
+ 
+ if player == 'X':
+  player = 'O'
+ else:
+  player = 'X'
