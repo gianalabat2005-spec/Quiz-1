@@ -72,7 +72,11 @@ def play(position):
         disable_buttons()
         return
 
-    player = 'O' if player == 'X' else 'X'
+    if player == 'X':
+      player = 'O'
+    else:
+      player = 'X'
+      
     status.config(text=f"Player {player}'s Turn")
 
 def disable_buttons():
