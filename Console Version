@@ -20,7 +20,7 @@ while True:
        f'c |{c1}|{c2}|{c3}|\n'\
  )  
 
- move = input(f'Player {player}, move(example: a1): ').strip().lower()
+ move = input(f"Player {player}'s, turn(example: a1): ").strip().lower()
  print()
 
  if move == 'a1' and a1 == ' ':
