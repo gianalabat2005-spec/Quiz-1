@@ -1,4 +1,5 @@
 import tkinter as tk
+import random  
 
 window = tk.Tk()
 window.title("Tic Tac Toe")
@@ -17,39 +18,41 @@ c3 = ' '
 
 player = 'X'
 
+colors = ["red", "green", "blue", "yellow", "orange", "purple", "pink", "cyan", "magenta"]
+
 def play(position):
     global a1, a2, a3, b1, b2, b3, c1, c2, c3, player
 
     if position == 'a1' and a1 == ' ':
         a1 = player
-        btn_a1.config(text=player)
+        btn_a1.config(text=player, bg=random.choice(colors))
     elif position == 'a2' and a2 == ' ':
         a2 = player
-        btn_a2.config(text=player)
+        btn_a2.config(text=player, bg=random.choice(colors))
     elif position == 'a3' and a3 == ' ':
         a3 = player
-        btn_a3.config(text=player)
+        btn_a3.config(text=player, bg=random.choice(colors))
     elif position == 'b1' and b1 == ' ':
         b1 = player
-        btn_b1.config(text=player)
+        btn_b1.config(text=player, bg=random.choice(colors))
     elif position == 'b2' and b2 == ' ':
         b2 = player
-        btn_b2.config(text=player)
+        btn_b2.config(text=player, bg=random.choice(colors))
     elif position == 'b3' and b3 == ' ':
         b3 = player
-        btn_b3.config(text=player)
+        btn_b3.config(text=player, bg=random.choice(colors))
     elif position == 'c1' and c1 == ' ':
         c1 = player
-        btn_c1.config(text=player)
+        btn_c1.config(text=player, bg=random.choice(colors))
     elif position == 'c2' and c2 == ' ':
         c2 = player
-        btn_c2.config(text=player)
+        btn_c2.config(text=player, bg=random.choice(colors))
     elif position == 'c3' and c3 == ' ':
         c3 = player
-        btn_c3.config(text=player)
+        btn_c3.config(text=player, bg=random.choice(colors))
     else:
         return
-
+    
     if (
         (a1 == a2 == a3 != ' ') or
         (b1 == b2 == b3 != ' ') or
